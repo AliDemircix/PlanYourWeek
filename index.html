@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Plan Your Week</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <ul class="container__analytics">
+        <li class="analytics__item"> <h1 class="analytics__item--header">45</h1> <span class="analytics__item--content">Total focused time (h)</span></li>
+        <li class="analytics__item"><h1 class="analytics__item--header">7</h1> <span class="analytics__item--content">Focused time of this week (h)</span></li>
+        <li class="analytics__item"><h1 class="analytics__item--header">2.2</h1> <span class="analytics__item--content">Focused time of today (h)</span></li>
+        <li class="analytics__item"><h1 class="analytics__item--header">30</h1> <span class="analytics__item--content">Total completed task</span></li>
+        <li class="analytics__item"><h1 class="analytics__item--header">12</h1> <span class="analytics__item--content">Total completed task this week</span></li>
+        <li class="analytics__item"><h1 class="analytics__item--header">3</h1> <span class="analytics__item--content">Total completed task today</span></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="events">
+         <form class="form__events"> 
+        <div class="events__day__options">
+          <label class="events__label" for="events_days"><i class="far fa-calendar-alt fa-2x"></i></label>
+          <select class="events__select" name="events_days" id="events_days">
+            <option class="days_option" value="monday">Monday</option>
+            <option class="days_option" value="tuisday">Tuisday</option>
+            <option class="days_option" value="wednesday">Wednesday</option>
+            <option class="days_option" value="thirsday">Thirsday</option>
+            <option class="days_option" value="friday">Friday</option>
+            <option class="days_option" value="saturday">Saturday</option>
+            <option class="days_option" value="sunday">Sunday</option>
+          </select>
+        </div>
+      <div class="event__hours__options">
+        <label class="events__label" for="events_hours"> <i class="far fa-clock fa-2x"></i></label>
+        <select class="events__hours__select" name="events_hours" id="event_hours" >
+          <option value="1" class="hours_option">0:00-2:00</option>
+          <option value="2" class="hours_option">2:00-4:00</option>
+          <option value="3" class="hours_option">4:00-6:00</option>
+          <option value="4" class="hours_option">6:00-8:00</option>
+          <option value="5" class="hours_option">8:00-10:00</option>
+          <option value="6" class="hours_option">10:00-12:00</option>
+          <option value="7" class="hours_option">12:00-14:00</option>
+          <option value="8" class="hours_option">14:00-16:00</option>
+          <option value="9" class="hours_option">16:00-18:00</option>
+          <option value="10" class="hours_option">18:00-20:00</option>
+          <option value="11" class="hours_option">20:00-22:00</option>
+          <option value="12" class="hours_option">22:00-24:00</option>
+        </select>
+      </div>
+          <input class="events__content" type="text" placeholder="Add your event">
+          <button type="submit" class="button btn--events--submit">ADD</button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="hours-title">
+          <ul class="title__list">
+            <li class='title__list__item'>0:00</li>
+            <li class='title__list__item'>2:00</li>
+            <li class='title__list__item'>4:00</li>
+            <li class='title__list__item'>6:00</li>
+            <li class='title__list__item'>8:00</li>
+            <li class='title__list__item'>10:00</li>
+            <li class='title__list__item'>12:00</li>
+            <li class='title__list__item'>14:00</li>
+            <li class='title__list__item'>16:00</li>
+            <li class='title__list__item'>18:00</li>
+            <li class='title__list__item'>20:00</li>
+            <li class='title__list__item'>22:00</li>
+            <li class='title__list__item'>24:00</li>
+          </ul>
+        </div>
+     <div class="calendar">
+      <div class="days">
+        <ul class='days__list '>
+          <li class='days__list__item'>Monday</li>
+          <li class='days__list__item'>Tuisday</li>
+          <li class='days__list__item'>Wednesday</li>
+          <li class='days__list__item'>Thirsday</li>
+          <li class='days__list__item'>Friday</li>
+          <li class='days__list__item'>Saturday</li>
+          <li class='days__list__item'>Sunday</li>
+        </ul>
+      </div>
+      <div class="hours">
+        <ul class='hours__list monday'>
+          <li class='hours__list__item item-filled'>JS CODE</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list tuisday'>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item item-filled'>BOOTSTRAP</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list wednesday'>
+          <li class='hours__list__item'>ali</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list thirsday'>
+          <li class='hours__list__item'>ali</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list friday'>
+          <li class='hours__list__item'>ali</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list saturday'>
+          <li class='hours__list__item'>ali</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+        <ul class='hours__list sunday '>
+          <li class='hours__list__item'>ali</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item item-filled'>HYF MEETING</li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+          <li class='hours__list__item'></li>
+        </ul>
+      </div>
+     </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
