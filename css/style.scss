@@ -5,18 +5,21 @@ $analytics__item-bg: #fff;
 $header-color: tomato;
 $content-text: rgb(190, 190, 190);
 $item-filled-bg: lightgreen;
+$light-orange: #f9bd09;
+$orange: #fe8344;
+$dark-pink: #ff1144;
+$light-purple: #cd7bdd;
+$myblue: #007cdc;
+$light-blue: #85bff4;
+$light-green: #8bc343;
+
 body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   background-color: $body-bg;
 }
-.button {
-  padding: 0.6rem;
-  width: 120px;
-  border-radius: 0.5rem;
-  border: none;
-}
+
 .container {
   margin: 1rem auto;
   width: 80%;
@@ -29,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 96%;
+  width: 94%;
   .analytics__item {
     display: flex;
     flex-direction: column;
@@ -39,6 +42,15 @@ body {
     background-color: $analytics__item-bg;
     line-height: 0.8rem;
     border-radius: 0.5rem;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 91%,
+      94% 91%,
+      100% 100%,
+      79% 92%,
+      0 92%
+    );
 
     &--header {
       font-size: 3rem;
@@ -50,6 +62,12 @@ body {
       margin-bottom: 1rem;
     }
   }
+}
+.button {
+  padding: 0.6rem;
+  width: 120px;
+  border-radius: 0.5rem;
+  border: none;
 }
 .hours-title {
   display: flex;
@@ -110,14 +128,15 @@ body {
     }
     .fa-clock {
       color: $header-color;
+      margin-left: 1rem;
     }
     .btn--events--submit {
       background-color: transparent;
-      border: solid 2px $item-filled-bg;
-      color: $item-filled-bg;
+      border: solid 2px $dark-pink;
+      color: $dark-pink;
       margin-right: 2rem;
       &:hover {
-        background-color: darken($item-filled-bg, 10);
+        background-color: darken($dark-pink, 1);
         color: $analytics__item-bg;
         cursor: pointer;
         transition: all 0.3s;
@@ -128,7 +147,7 @@ body {
   .events__hours__select {
     padding: 0.6rem;
     font-size: 0.9rem;
-    border: solid 1px $item-filled-bg;
+    border: solid 1px $dark-pink;
     border-radius: 0.5rem;
   }
   .hours_option {
@@ -137,9 +156,9 @@ body {
   .events__content {
     width: 50%;
     outline: none;
-    border: solid 1px $item-filled-bg;
+    border: solid 1px $dark-pink;
     &::placeholder {
-      color: $item-filled-bg;
+      color: $dark-pink;
       padding: 1rem;
     }
   }
