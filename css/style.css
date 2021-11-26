@@ -54,6 +54,7 @@ body {
           justify-content: space-between;
   list-style: none;
   width: 94%;
+  position: relative;
 }
 
 .container__analytics .analytics__item {
@@ -87,6 +88,18 @@ body {
   font-size: 0.85rem;
   color: #bebebe;
   margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  color: tomato;
 }
 
 .button {

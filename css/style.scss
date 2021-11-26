@@ -54,6 +54,7 @@ body {
   justify-content: space-between;
   list-style: none;
   width: 94%;
+  position: relative;
 
   .analytics__item {
     display: flex;
@@ -84,6 +85,16 @@ body {
       margin-bottom: 1rem;
     }
   }
+}
+.hidden {
+  display: none;
+}
+.fa-angle-down,
+.fa-angle-up {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  color: $header-color;
 }
 .button {
   padding: 0.6rem;

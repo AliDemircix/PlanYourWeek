@@ -4,11 +4,21 @@ const task = document.querySelector('.events__content');
 const submitTask = document.querySelector('.button');
 const taskNum=document.querySelector('#task-num');
 const dateSelect= document.querySelector('.date');
-
+const showIcon= document.querySelector('.fa-angle-down');
+const containerAnalytic= document.querySelector('.container__analytics');
 const time= document.querySelector(".time");
-
+// Show Stats
+showIcon.addEventListener('click',()=> {
+  containerAnalytic.classList.toggle("hidden");
+  if(showIcon.className==="fas fa-angle-down"){
+    showIcon.className="fas fa-angle-up";
+  }
+  else if(showIcon.className==="fas fa-angle-up"){
+    showIcon.className="fas fa-angle-down";
+  }
+})
  
-
+// Show Time Start
 setInterval(showTime,1000)
 function showTime() {
   let date =new Date();
