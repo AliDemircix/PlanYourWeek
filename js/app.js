@@ -2,7 +2,8 @@ const selectDay = document.querySelector('.events__select');
 const selectHour = document.querySelector('.events__hours__select');
 const task = document.querySelector('.events__content');
 const submitTask = document.querySelector('.button');
-
+const taskNum=document.querySelector('#task-num');
+let taskCount =0;
 const addTask = (e)=> {
  
     e.preventDefault();
@@ -12,6 +13,7 @@ const addTask = (e)=> {
     var hourSelection = document.querySelector(".events__hours__select").selectedIndex;
     const hour =document.querySelectorAll(".hours_option")[hourSelection].text;
    const myTask = task.value;
+  
   const taskWillAdd = {
     day,
     hour,
@@ -19,6 +21,7 @@ const addTask = (e)=> {
   }
 
 if(taskWillAdd.myTask!==''){ 
+  taskCount++;
   switch(taskWillAdd.day){
     case 'monday': switch(taskWillAdd.hour){
    
@@ -312,6 +315,8 @@ else {
   alert('Task should be filled');
 }
 task.value='';
+taskNum.textContent=taskCount;
+console.log(taskCount)
   return taskWillAdd;
   
 }
