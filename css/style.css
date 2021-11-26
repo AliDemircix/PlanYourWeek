@@ -252,5 +252,6 @@ body {
   font-size: 0.6rem;
   border: solid 1px #ddd;
   padding: 0.2rem;
+  min-height: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
