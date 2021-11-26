@@ -14,6 +14,34 @@ body {
   border-radius: 0.5rem;
 }
 
+.times {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.7rem;
+}
+
+.times .headertitle__title {
+  color: tomato;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.times .date,
+.times .time {
+  width: 10%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: tomato;
+}
+
 .container__analytics {
   display: -webkit-box;
   display: -ms-flexbox;

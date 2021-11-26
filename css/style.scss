@@ -27,12 +27,34 @@ body {
   background-color: $container-bg;
   border-radius: 0.5rem;
 }
+.times {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  .headertitle {
+    &__title {
+      color: $header-color;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+  .date,
+  .time {
+    width: 10%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $header-color;
+  }
+}
 .container__analytics {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
   width: 94%;
+
   .analytics__item {
     display: flex;
     flex-direction: column;

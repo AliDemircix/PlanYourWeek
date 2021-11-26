@@ -3,6 +3,25 @@ const selectHour = document.querySelector('.events__hours__select');
 const task = document.querySelector('.events__content');
 const submitTask = document.querySelector('.button');
 const taskNum=document.querySelector('#task-num');
+const dateSelect= document.querySelector('.date');
+
+const time= document.querySelector(".time");
+
+ 
+
+setInterval(showTime,1000)
+function showTime() {
+  let date =new Date();
+let h = date.getHours()
+let m = date.getMinutes()
+let s = date.getSeconds()
+  let currentTime =`${h}:${m}:${s} `;
+time.textContent=currentTime
+dateSelect.textContent=date.toLocaleDateString();
+}
+
+
+
 let taskCount =0;
 const addTask = (e)=> {
  
