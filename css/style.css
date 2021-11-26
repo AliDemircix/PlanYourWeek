@@ -248,7 +248,7 @@ body {
 }
 
 .calendar .hours__list__item {
-  width: 5.5%;
+  width: 61px;
   font-size: 0.6rem;
   border: solid 1px #ddd;
   padding: 0.2rem;
