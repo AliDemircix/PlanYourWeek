@@ -18,15 +18,15 @@
       </div>
     </div>
     <div class="container">
-      <ul class="container__analytics hidden">
-        <li class="analytics__item"> <h1 class="analytics__item--header">45</h1> <span class="analytics__item--content">Total focused time (h)</span></li>
+      <ul class="container__analytics ">
+        <li class="analytics__item"> <h1 id='task-time' class="analytics__item--header">0</h1> <span class="analytics__item--content">Total focused time (h)</span></li>
         <li class="analytics__item"><h1 class="analytics__item--header">7</h1> <span class="analytics__item--content">Focused time of this week (h)</span></li>
         <li class="analytics__item"><h1 class="analytics__item--header">2.2</h1> <span class="analytics__item--content">Focused time of today (h)</span></li>
-        <li class="analytics__item"><h1 id='task-num' class="analytics__item--header">0</h1> <span class="analytics__item--content">Total completed task</span></li>
-        <li class="analytics__item"><h1 class="analytics__item--header">12</h1> <span class="analytics__item--content">Total completed task this week</span></li>
+        <li class="analytics__item"><h1 id='task-num' class="analytics__item--header">0</h1> <span class="analytics__item--content">Total task</span></li>
+        <li class="analytics__item"><h1 id='task-comp-num' class="analytics__item--header">0</h1> <span class="analytics__item--content">Total completed task</span></li>
         <li class="analytics__item"><h1 class="analytics__item--header">3</h1> <span class="analytics__item--content">Total completed task today</span></li>
       </ul>
-      <i class="fas fa-angle-down"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
   </header>
   <main>
@@ -37,13 +37,13 @@
         <div class="events__day__options">
           <label class="events__label" for="events_days"><i class="far fa-calendar-alt fa-2x"></i></label>
           <select  class="events__select" name="events_days" id="events_days">
-            <option class="days_option" value="monday">Monday</option>
-            <option class="days_option" value="tuisday">Tuisday</option>
-            <option class="days_option" value="wednesday">Wednesday</option>
-            <option class="days_option" value="thirsday">Thirsday</option>
-            <option class="days_option" value="friday">Friday</option>
-            <option class="days_option" value="saturday">Saturday</option>
-            <option class="days_option" value="sunday">Sunday</option>
+            <option class="days_option" value="m">Monday</option>
+            <option class="days_option" value="tu">Tuesday</option>
+            <option class="days_option" value="wed">Wednesday</option>
+            <option class="days_option" value="thi">Thirsday</option>
+            <option class="days_option" value="fri">Friday</option>
+            <option class="days_option" value="sat">Saturday</option>
+            <option class="days_option" value="sun">Sunday</option>
           </select>
         </div>
       <div class="event__hours__options">
@@ -102,102 +102,102 @@
       </div>
       <div class="hours">
         <ul class='hours__list monday'>
-          <li id='m-1' class='hours__list__item '></li>
-          <li id='m-2' class='hours__list__item'></li>
-          <li id='m-3' class='hours__list__item'></li>
-          <li id='m-4' class='hours__list__item'></li>
-          <li id='m-5' class='hours__list__item'></li>
-          <li id='m-6' class='hours__list__item'></li>
-          <li id='m-7' class='hours__list__item'></li>
-          <li id='m-8' class='hours__list__item'></li>
-          <li id='m-9' class='hours__list__item'></li>
-          <li id='m-10' class='hours__list__item'></li>
-          <li id='m-11' class='hours__list__item'></li>
-          <li id='m-12' class='hours__list__item'></li>
+          <li id='m1' class='hours__list__item '></li>
+          <li id='m2' class='hours__list__item'></li>
+          <li id='m3' class='hours__list__item'></li>
+          <li id='m4' class='hours__list__item'></li>
+          <li id='m5' class='hours__list__item'></li>
+          <li id='m6' class='hours__list__item'></li>
+          <li id='m7' class='hours__list__item'></li>
+          <li id='m8' class='hours__list__item'></li>
+          <li id='m9' class='hours__list__item'></li>
+          <li id='m10' class='hours__list__item'></li>
+          <li id='m11' class='hours__list__item'></li>
+          <li id='m12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list tuisday'>
-          <li id='tu-1' class='hours__list__item'></li>
-          <li id='tu-2' class='hours__list__item'></li>
-          <li id='tu-3' class='hours__list__item'></li>
-          <li id='tu-4' class='hours__list__item'></li>
-          <li id='tu-5' class='hours__list__item'></li>
-          <li id='tu-6' class='hours__list__item'></li>
-          <li id='tu-7' class='hours__list__item '></li>
-          <li id='tu-8' class='hours__list__item'></li>
-          <li id='tu-9' class='hours__list__item'></li>
-          <li id='tu-10' class='hours__list__item'></li>
-          <li id='tu-11' class='hours__list__item'></li>
-          <li id='tu-12' class='hours__list__item'></li>
+          <li id='tu1' class='hours__list__item'></li>
+          <li id='tu2' class='hours__list__item'></li>
+          <li id='tu3' class='hours__list__item'></li>
+          <li id='tu4' class='hours__list__item'></li>
+          <li id='tu5' class='hours__list__item'></li>
+          <li id='tu6' class='hours__list__item'></li>
+          <li id='tu7' class='hours__list__item '></li>
+          <li id='tu8' class='hours__list__item'></li>
+          <li id='tu9' class='hours__list__item'></li>
+          <li id='tu10' class='hours__list__item'></li>
+          <li id='tu11' class='hours__list__item'></li>
+          <li id='tu12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list wednesday'>
-          <li id='wed-1' class='hours__list__item'></li>
-          <li id='wed-2' class='hours__list__item'></li>
-          <li id='wed-3' class='hours__list__item'></li>
-          <li id='wed-4' class='hours__list__item'></li>
-          <li id='wed-5' class='hours__list__item'></li>
-          <li id='wed-6' class='hours__list__item'></li>
-          <li id='wed-7' class='hours__list__item '></li>
-          <li id='wed-8' class='hours__list__item'></li>
-          <li id='wed-9' class='hours__list__item'></li>
-          <li id='wed-10' class='hours__list__item'></li>
-          <li id='wed-11' class='hours__list__item'></li>
-          <li id='wed-12' class='hours__list__item'></li>
+          <li id='wed1' class='hours__list__item'></li>
+          <li id='wed2' class='hours__list__item'></li>
+          <li id='wed3' class='hours__list__item'></li>
+          <li id='wed4' class='hours__list__item'></li>
+          <li id='wed5' class='hours__list__item'></li>
+          <li id='wed6' class='hours__list__item'></li>
+          <li id='wed7' class='hours__list__item '></li>
+          <li id='wed8' class='hours__list__item'></li>
+          <li id='wed9' class='hours__list__item'></li>
+          <li id='wed10' class='hours__list__item'></li>
+          <li id='wed11' class='hours__list__item'></li>
+          <li id='wed12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list thirsday'>
-          <li id='thi-1' class='hours__list__item'></li>
-          <li id='thi-2' class='hours__list__item'></li>
-          <li id='thi-3' class='hours__list__item'></li>
-          <li id='thi-4' class='hours__list__item'></li>
-          <li id='thi-5' class='hours__list__item'></li>
-          <li id='thi-6' class='hours__list__item'></li>
-          <li id='thi-7' class='hours__list__item '></li>
-          <li id='thi-8' class='hours__list__item'></li>
-          <li id='thi-9' class='hours__list__item'></li>
-          <li id='thi-10' class='hours__list__item'></li>
-          <li id='thi-11' class='hours__list__item'></li>
-          <li id='thi-12' class='hours__list__item'></li>
+          <li id='thi1' class='hours__list__item'></li>
+          <li id='thi2' class='hours__list__item'></li>
+          <li id='thi3' class='hours__list__item'></li>
+          <li id='thi4' class='hours__list__item'></li>
+          <li id='thi5' class='hours__list__item'></li>
+          <li id='thi6' class='hours__list__item'></li>
+          <li id='thi7' class='hours__list__item '></li>
+          <li id='thi8' class='hours__list__item'></li>
+          <li id='thi9' class='hours__list__item'></li>
+          <li id='thi10' class='hours__list__item'></li>
+          <li id='thi11' class='hours__list__item'></li>
+          <li id='thi12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list friday'>
-          <li id='fri-1' class='hours__list__item'></li>
-          <li id='fri-2' class='hours__list__item'></li>
-          <li id='fri-3' class='hours__list__item'></li>
-          <li id='fri-4' class='hours__list__item'></li>
-          <li id='fri-5' class='hours__list__item'></li>
-          <li id='fri-6' class='hours__list__item'></li>
-          <li id='fri-7' class='hours__list__item '></li>
-          <li id='fri-8' class='hours__list__item'></li>
-          <li id='fri-9' class='hours__list__item'></li>
-          <li id='fri-10' class='hours__list__item'></li>
-          <li id='fri-11' class='hours__list__item'></li>
-          <li id='fri-12' class='hours__list__item'></li>
+          <li id='fri1' class='hours__list__item'></li>
+          <li id='fri2' class='hours__list__item'></li>
+          <li id='fri3' class='hours__list__item'></li>
+          <li id='fri4' class='hours__list__item'></li>
+          <li id='fri5' class='hours__list__item'></li>
+          <li id='fri6' class='hours__list__item'></li>
+          <li id='fri7' class='hours__list__item '></li>
+          <li id='fri8' class='hours__list__item'></li>
+          <li id='fri9' class='hours__list__item'></li>
+          <li id='fri10' class='hours__list__item'></li>
+          <li id='fri11' class='hours__list__item'></li>
+          <li id='fri12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list saturday'>
-          <li id='sat-1' class='hours__list__item'></li>
-          <li id='sat-2' class='hours__list__item'></li>
-          <li id='sat-3' class='hours__list__item'></li>
-          <li id='sat-4' class='hours__list__item'></li>
-          <li id='sat-5' class='hours__list__item'></li>
-          <li id='sat-6' class='hours__list__item'></li>
-          <li id='sat-7' class='hours__list__item '></li>
-          <li id='sat-8' class='hours__list__item'></li>
-          <li id='sat-9' class='hours__list__item'></li>
-          <li id='sat-10' class='hours__list__item'></li>
-          <li id='sat-11' class='hours__list__item'></li>
-          <li id='sat-12' class='hours__list__item'></li>
+          <li id='sat1' class='hours__list__item'></li>
+          <li id='sat2' class='hours__list__item'></li>
+          <li id='sat3' class='hours__list__item'></li>
+          <li id='sat4' class='hours__list__item'></li>
+          <li id='sat5' class='hours__list__item'></li>
+          <li id='sat6' class='hours__list__item'></li>
+          <li id='sat7' class='hours__list__item '></li>
+          <li id='sat8' class='hours__list__item'></li>
+          <li id='sat9' class='hours__list__item'></li>
+          <li id='sat10' class='hours__list__item'></li>
+          <li id='sat11' class='hours__list__item'></li>
+          <li id='sat12' class='hours__list__item'></li>
         </ul>
         <ul class='hours__list sunday '>
-          <li id='san-1' class='hours__list__item'></li>
-          <li id='san-2' class='hours__list__item'></li>
-          <li id='san-3' class='hours__list__item'></li>
-          <li id='san-4' class='hours__list__item'></li>
-          <li id='san-5' class='hours__list__item'></li>
-          <li id='san-6' class='hours__list__item'></li>
-          <li id='san-7' class='hours__list__item '></li>
-          <li id='san-8' class='hours__list__item'></li>
-          <li id='san-9' class='hours__list__item'></li>
-          <li id='san-10' class='hours__list__item'></li>
-          <li id='san-11' class='hours__list__item'></li>
-          <li id='san-12' class='hours__list__item'></li>
+          <li id='sun1' class='hours__list__item'></li>
+          <li id='sun2' class='hours__list__item'></li>
+          <li id='sun3' class='hours__list__item'></li>
+          <li id='sun4' class='hours__list__item'></li>
+          <li id='sun5' class='hours__list__item'></li>
+          <li id='sun6' class='hours__list__item'></li>
+          <li id='sun7' class='hours__list__item '></li>
+          <li id='sun8' class='hours__list__item'></li>
+          <li id='sun9' class='hours__list__item'></li>
+          <li id='sun10' class='hours__list__item'></li>
+          <li id='sun11' class='hours__list__item'></li>
+          <li id='sun12' class='hours__list__item'></li>
         </ul>
       </div>
      </div>

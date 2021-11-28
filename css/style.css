@@ -276,6 +276,11 @@ body {
   background-color: lightgreen;
 }
 
+.calendar .completed {
+  background-color: #fe8344;
+  text-decoration: line-through;
+}
+
 .calendar .hours {
   width: 100%;
   margin-left: -2.5rem;
