@@ -1,0 +1,45 @@
+.container__analytics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 94%;
+  position: relative;
+
+  .analytics__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0.5rem;
+    align-items: center;
+    background-color: $analytics__item-bg;
+    line-height: 0.8rem;
+    border-radius: 0.5rem;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 91%,
+      94% 91%,
+      100% 100%,
+      79% 92%,
+      0 92%
+    );
+
+    &--header {
+      font-size: 3rem;
+      color: $header-color;
+    }
+    &--content {
+      font-size: 0.85rem;
+      color: $content-text;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.fa-angle-down,
+.fa-angle-up {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  color: $header-color;
+}

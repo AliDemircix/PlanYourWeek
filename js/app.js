@@ -9,6 +9,7 @@ const dateSelect= document.querySelector('.date');
 const showIcon= document.querySelector('.fa-angle-up');
 const containerAnalytic= document.querySelector('.container__analytics');
 const time= document.querySelector(".time");
+const addedEvents= document.querySelectorAll(".hours__list__item");
 
 // Show-Hide Stats
 showIcon.addEventListener('click',()=> {
@@ -34,6 +35,7 @@ dateSelect.textContent=date.toLocaleDateString();
 }
 let taskCount =0;
 let taskCompletedCount=0;
+
 //To Add Task Call This Function
 const findPlace = (day,hour,task) => {
   if(task===""){
@@ -42,20 +44,25 @@ const findPlace = (day,hour,task) => {
       document.querySelector(`#${day}${hour}`).textContent=task;
       document.querySelector(`#${day}${hour}`).classList.add('item-filled');
       taskCount++;
-     
     }
+}
 
-}
-const addedEvents= document.querySelectorAll(".hours__list__item");
-console.log(addedEvents)
+// To Complete Task Function
 const completeTask = (e) => {
-e.target.classList.add("completed");
-taskCompletedCount++;
-taskTotalComp.textContent=taskCompletedCount;
+  if(e.target.classList.contains('completed')){ // Check if tag has already completed
+    alert("You have already completed the task")
+  } else {
+    e.target.classList.add("completed");
+    taskCompletedCount++;
+    taskTotalComp.textContent=taskCompletedCount;
+  }
 }
+
+// List all task to add event listener for completed Tasks
 addedEvents.forEach(event => {
   event.addEventListener('click',completeTask)
 });
+
 // Main Function
 const addTask = (e)=> {
     e.preventDefault();
@@ -66,12 +73,12 @@ const addTask = (e)=> {
    const myTask = task.value;
 
   findPlace(day,hour,myTask);
- 
+
   taskNum.textContent=taskCount;
   taskTotalTime.textContent=taskCount*2;
-  
   task.value='';
 }
+
 submitTask.addEventListener('click',addTask) ;
 
 
