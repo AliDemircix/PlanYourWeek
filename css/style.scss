@@ -168,6 +168,7 @@ body {
       border: solid 2px $dark-pink;
       color: $dark-pink;
       margin-right: 2rem;
+
       &:hover {
         background-color: darken($dark-pink, 1);
         color: $analytics__item-bg;
@@ -210,6 +211,10 @@ body {
   }
   .item-filled {
     background-color: $item-filled-bg;
+  }
+  .completed {
+    background-color: $orange;
+    text-decoration: line-through;
   }
   .hours {
     width: 100%;
