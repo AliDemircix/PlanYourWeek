@@ -1,0 +1,25 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: $body-bg;
+}
+
+.container {
+  margin: 1rem auto;
+  width: 80%;
+  border: $border;
+  background-color: $container-bg;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  padding: 0.6rem;
+  width: 120px;
+  border-radius: 0.5rem;
+  border: none;
+}
