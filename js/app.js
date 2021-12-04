@@ -35,6 +35,12 @@ dateSelect.textContent=date.toLocaleDateString();
 }
 let taskCount =0;
 let taskCompletedCount=0;
+let taskArr=[];
+let taskObj= {
+  hour:'',
+  day:'',
+  task:'',
+};
 
 //To Add Task Call This Function
 const findPlace = (day,hour,task) => {
@@ -49,7 +55,10 @@ const findPlace = (day,hour,task) => {
 
 // To Complete Task Function
 const completeTask = (e) => {
-  if(e.target.classList.contains('completed')){ // Check if tag has already completed
+  if(e.target.textContent===""){ // avoid completing empty task 
+    alert('There is no event to complete');
+  }
+  else if(e.target.classList.contains('completed')){ // Check if tag has already completed
     alert("You have already completed the task")
   } else {
     e.target.classList.add("completed");
@@ -71,7 +80,13 @@ const addTask = (e)=> {
     var hourSelection = document.querySelector(".events__hours__select").selectedIndex;
     const hour =document.querySelectorAll(".hours_option")[hourSelection].value;
    const myTask = task.value;
-
+  // Add to task information to array to save it local storage;
+    taskObj={hour,
+     day,
+     myTask
+   };
+  taskArr.push(taskObj);
+  console.log(taskArr)
   findPlace(day,hour,myTask);
 
   taskNum.textContent=taskCount;
