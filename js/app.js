@@ -254,20 +254,20 @@ const scheduleInner = `<div class="container">
 const sectionSchedule = create('section');
 sectionSchedule.innerHTML = scheduleInner;
 
-// const array = [
-//   hoursOption1,
-//   hoursOption2,
-//   hoursOption3,
-//   hoursOption4,
-//   hoursOption5,
-//   hoursOption6,
-//   hoursOption7,
-//   hoursOption8,
-//   hoursOption9,
-//   hoursOption10,
-//   hoursOption11,
-//   hoursOption12,
-// ];
+const array = [
+  hoursOption1,
+  hoursOption2,
+  hoursOption3,
+  hoursOption4,
+  hoursOption5,
+  hoursOption6,
+  hoursOption7,
+  hoursOption8,
+  hoursOption9,
+  hoursOption10,
+  hoursOption11,
+  hoursOption12,
+];
 //MAIN SECTION END
 
 //Add Elements
@@ -315,21 +315,26 @@ addChild(addButton, mForm);
 addChild(hoursLabel, mFormHoursOption);
 addChild(hoursSelect, mFormHoursOption);
 addChild(hoursI, hoursLabel);
-addChild(hoursOption1, hoursSelect);
-addChild(hoursOption2, hoursSelect);
-addChild(hoursOption3, hoursSelect);
-addChild(hoursOption4, hoursSelect);
-addChild(hoursOption5, hoursSelect);
-addChild(hoursOption6, hoursSelect);
-addChild(hoursOption7, hoursSelect);
-addChild(hoursOption8, hoursSelect);
-addChild(hoursOption9, hoursSelect);
-addChild(hoursOption10, hoursSelect);
-addChild(hoursOption11, hoursSelect);
-addChild(hoursOption12, hoursSelect);
+// addChild(hoursOption1, hoursSelect);
+// addChild(hoursOption2, hoursSelect);
+// addChild(hoursOption3, hoursSelect);
+// addChild(hoursOption4, hoursSelect);
+// addChild(hoursOption5, hoursSelect);
+// addChild(hoursOption6, hoursSelect);
+// addChild(hoursOption7, hoursSelect);
+// addChild(hoursOption8, hoursSelect);
+// addChild(hoursOption9, hoursSelect);
+// addChild(hoursOption10, hoursSelect);
+// addChild(hoursOption11, hoursSelect);
+// addChild(hoursOption12, hoursSelect);
 
-// for (let i = 0; i < array.length; i++) {
-//   addChild(array[i + 1], hoursSelect);
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+  addChild(array[i], hoursSelect);
+}
+
+// for (const element of array) {
+//   addChild(element, hoursSelect);
 // }
 
 addChild(mFormLabel, mFormWrapper);
