@@ -428,7 +428,33 @@ const completeTask = (e) => {
 addedEvents.forEach((event) => {
   event.addEventListener('click', completeTask);
 });
+//Storage Add Function
+function storageAdd(newTask) {
+  let tasks;
+  if (localStorage.getItem('tasks') == null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  tasks.push(newTask);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 
+//Storage Read Function
+function StorageRead(task) {
+  let tasks;
+  if (localStorage.getItem('tasks') == null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+
+  tasks.forEach((task) => {
+    console.log(task.day, task.hour, task.myTask);
+    findPlace(task.day, task.hour, task.myTask);
+  });
+}
+document.addEventListener('DOMContentLoaded', StorageRead);
 // Main Function
 const addTask = (e) => {
   e.preventDefault();
@@ -441,8 +467,9 @@ const addTask = (e) => {
   const myTask = task.value;
   // Add to task information to array to save it local storage;
   taskObj = { hour, day, myTask, isFinished: false };
-  taskArr.push(taskObj);
-  console.log(taskArr);
+  // taskArr.push(taskObj);
+  // console.log(taskArr);
+  storageAdd(taskObj);
   findPlace(day, hour, myTask);
 
   taskNum.textContent = taskCount;
